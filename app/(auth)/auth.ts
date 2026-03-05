@@ -24,7 +24,7 @@ providers: [
     name: "Guest",
     credentials: {},
     async authorize() {
-      // Version sans DB, en mémoire
+      // Version sans DB, en mémoire uniquement
       const guestId = `guest-${Date.now()}`;
       return {
         id: guestId,
@@ -34,5 +34,5 @@ providers: [
         type: "guest" as const,
       };
     },
-  }),
+  })
 ],
