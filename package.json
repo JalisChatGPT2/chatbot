@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "tsx lib/db/migrate && next build",
+    "build": "if [ -n \"$POSTGRES_URL\" ]; then tsx lib/db/migrate; fi && next build",
     "start": "next start",
     "lint": "ultracite check",
     "format": "ultracite fix",
