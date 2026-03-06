@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "scripts": {
-  // ... autres scripts
-  "build": "next build",   // ← simple et propre, sans commentaire ni if
-  // ... 
+  "build": "next build",  
 }
     "start": "next start",
     "lint": "ultracite check",
