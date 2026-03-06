@@ -1,7 +1,7 @@
 import { NextAuth } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { compare } from "bcrypt-ts";
-import { getUser } from "./db";
+//import { getUser } from "./db";
 
 export const authOptions = {
   providers: [
